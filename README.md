@@ -1,29 +1,54 @@
-# Azure_SQLServer
+# Azure_SQLServer Guía
 
-En este repositorio, encontrarás una guía detallada sobre los siguientes temas:
+Esta guía te acompañará a través de los siguientes pasos para trabajar con Azure y Microsoft SQL Server:
 
-- **Creación de una base de datos en Microsoft Azure** utilizando el sistema de gestión de bases de datos Microsoft SQL Server.
-- **Establecimiento de una conexión con 'SQL Server Management Studio'.**
-- **Conexión a la base de datos** mediante el lenguaje de programación Java.
-- **Conexión a la base de datos** mediante el lenguaje de programación C#.
+## Contenido
+
+- [Creación de una base de datos SQL Server en Microsoft Azure](#creación-de-una-base-de-datos-SQL-Server-en-microsoft-azure)
+- [Establecimiento de una conexión con SQL Server Management Studio](#establecimiento-de-una-conexión-con-sql-server-management-studio)
+- [Conexión a la base de datos usando el lenguaje de programación Java](#conexión-a-la-base-de-datos-usando-el-lenguaje-de-programación-java)
+- [Conexión a la base de datos usando el lenguaje de programación C#](#conexión-a-la-base-de-datos-usando-el-lenguaje-de-programación-c)
 
 ## Primeros pasos
 
-1. Para comenzar, ingresa al [Portal de Azure](https://portal.azure.com/). Esta URL es crucial ya que te permitirá administrar los servicios de Azure. **https://portal.azure.com/**
-2. Asegúrate de usar las credenciales de tu cuenta de organización, educativa o personal que cuente con una suscripción en Azure.
-3. Una vez ingresado a nuestra cuenta, visualizar la pantalla de inicio del [Portal de Azure](https://portal.azure.com/)
+1. Comienza ingresando al [Portal de Azure](https://portal.azure.com/). Esta URL es esencial, ya que te permitirá administrar los servicios de Azure.
 
-![Portal de Azure](image.png "Portal de Azure")
+2. Utiliza las credenciales de tu cuenta de organización, educación o personal que cuente con una suscripción en Azure.
 
-## Crear grupo de recursos
+3. Una vez en tu cuenta, te encontrarás en la pantalla de inicio del Portal de Azure.
 
-Se recomienda crear un grupo de recursos para el proyecto, lo cual es contenedor que almacena los recursos relacionados con una solución de Azure
+   ![Portal de Azure](/img/image.png "Portal de Azure")
 
-1. Buscamos en la barra de busqueda **Grupos de recursos**
+## Crear un grupo de recursos
 
-![Buscar grupo de recursos](image-2.png)
+Antes de comenzar, es recomendable crear un grupo de recursos. Este es un contenedor que almacena los recursos relacionados con una solución en Azure.
 
-Podemos visualizar los grupos de recursos que disponemos actualmente o hemos creados
+1. En la barra de búsqueda, busca **Grupos de recursos**.
 
-![Grupo de recursos](image-1.png)
+   ![Buscar grupo de recursos](/img/image-2.png)
+
+2. Verás una lista de los grupos de recursos actuales o creados anteriormente.
+
+   ![Grupo de recursos](/img/image-1.png)
+
+3. Haz clic en el botón de crear y configura los siguientes parámetros:
+
+   ### Detalles del proyecto
+
+   - **Suscripción**: Selecciona la suscripción activa de Azure. **En nuestro caso, elegimos *"Azure for Students"***.
+
+   - **Grupo de recursos**: Proporciona un nombre que siga los requisitos de Azure. Puede ser un nombre clave para tu proyecto o una nomenclatura coherente. **En este caso, será *"Prueba-SQLServer"***.
+
+   ### Detalles del recurso
+
+   - **Región**: Elige una región cercana geográficamente. Puedes consultar las opciones en el [Mapa interactivo](https://datacenters.microsoft.com/globe/explore). **En nuestro caso, elegimos *"South Central US"***.
+    ###
+
+   ![Parametros de grupo de recursos](/img/image4.png)
+
+4. Haz clic en Revisar y crear. Verifica que todos los detalles sean correctos y, finalmente, haz clic en Crear. Recibirás una notificación.
+
+5. Una vez creado el grupo de recursos, podrás verlo en la página de Grupos de recursos.
+
+> **Notificaciones:** Azure te notificará sobre eventos como crear, eliminar, actualizar o apagar mediante notificaciones.
 
