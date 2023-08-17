@@ -9,5 +9,5 @@ En este repositorio, encontrarás una guía detallada sobre los siguientes temas
 
 ## Primeros pasos
 
-    1. Accede al [sitio web de Azure Portal](https://portal.azure.com/), que es la URL donde podrás administrar los servicios de Azure. Este enlace es esencial, así que recuérdalo.
-    2. Inicia sesión con las credenciales de tu cuenta de organización, educativa o personal, que tenga una suscripción en Azure.
+1. Para comenzar, ingresa al [Portal de Azure](https://portal.azure.com/) **https://portal.azure.com/**. Esta URL es crucial ya que te permitirá administrar los servicios de Azure.
+2. Asegúrate de usar las credenciales de tu cuenta de organización, educativa o personal que cuente con una suscripción en Azure.
