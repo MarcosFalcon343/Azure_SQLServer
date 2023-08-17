@@ -14,3 +14,16 @@ En este repositorio, encontrarás una guía detallada sobre los siguientes temas
 3. Una vez ingresado a nuestra cuenta, visualizar la pantalla de inicio del [Portal de Azure](https://portal.azure.com/)
 
 ![Portal de Azure](image.png "Portal de Azure")
+
+## Crear grupo de recursos
+
+Se recomienda crear un grupo de recursos para el proyecto, lo cual es contenedor que almacena los recursos relacionados con una solución de Azure
+
+1. Buscamos en la barra de busqueda **Grupos de recursos**
+
+![Buscar grupo de recursos](image-2.png)
+
+Podemos visualizar los grupos de recursos que disponemos actualmente o hemos creados
+
+![Grupo de recursos](image-1.png)
+
