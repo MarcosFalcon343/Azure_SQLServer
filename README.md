@@ -82,17 +82,18 @@ Configura la pestaña "Básico" de la base de datos con los siguientes parámetr
 ### Detalles de la base de datos
 
 - **Nombre de la base de datos**: Introducimos el nombre de nuestra base de datos. ¨**En nuestro caso, elegimos *Prueba-SQL-Server***
-- **Servidor**: Daremos click en el botón de [Crear nuevo](##Creacion-un-servidor-de-SQL-Database) *<-- Haz click en el enlace*
+- **Servidor**: Daremos click en el botón de [Crear nuevo](#Creacion-un-servidor-de-SQL-Database) *<-- Haz click en el enlace*
 ![Crear Nuevo](/img/image7.png)
 > Al crear el servidor de SQL Database en la parte superior derecha se mostrara un panel denominado **Resumen del costo**, el cual nos ayudara a visualizar los costos aproximados del recurso. *No se asusten por el costo elevado por mes* 🫠, *este cambiara conforme a la configuracion acontinuacion* 🙂. 
 ![Resumen de costo](/img/image13.png)
 - **¿Quiere usar un grupo elástico de SQL?**: *Seleccionamos **No***
 - **Entorno de carga de trabajo**: *Seleccionamos **Implementacion***. *Gracias a esta opcion bajara significativamente el costo aproximado del recurso*
-- **Proceso y almacenamiento**
+- **Proceso y almacenamiento**: En este apartado realizaremos unas configuraciones pertinentes, asi que damos click en el boton **"Configurar base de datos"**, 
 
 ### Redundancia del almacenamiento de copias de seguridad
 
 - **Redundancia de almacenamiento de copia de seguridad**
+
 
 ## Creacion un servidor de SQL Database
 
@@ -131,6 +132,20 @@ Nos aparece las diferentes maneras de autenticacion para acceder al servidor com
 ![Ambos](/img/image12.png)  
 
 > Al finalizar dar click al boton de **"Aceptar"**
+
+## Configurar base de datos (Proceso y almacenamiento)
+
+En este apartado realizaremos la configuracion del hardware en funcion de la carga de trabajo como los nucleos virtual y el tamaño maximo de datos(GB)
+
+### Nivel de servicio y proceso
+- **Nivel de servicio**: En este apartado tenemos varias opciones dispinibles en funcion de las necesidades de la carga de trabajo. *Se cuidadoso ya que cada opcion varia significativamente el costo del recurso*. **En nuestro caso, seleccionamos *Uso general***
+- **Nivel de proceso**: Tenemos 2 opciones **Aprovisionado**(*Los recursos de proceso están preasignados.*) y **Sin servidor**(*Los recursos de proceso se escalan automáticamente.*). **En nuestro caso, seleccionamos *Sin servidor***
+### Hardware de proceso
+- Configuracion de hardware
+- Numero maximo de nucleos virtuales
+- Numero minimo de nucleos virtuales
+### Retraso de pausa automática
+### Tamaño maximoo de datos (GB)
 
 
 
